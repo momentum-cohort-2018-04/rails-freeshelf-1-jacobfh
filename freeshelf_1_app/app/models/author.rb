@@ -1,4 +1,6 @@
 class Author < ApplicationRecord
-    has_many :books
-    accepts_nested_attributes_for :books
+    attr_accessor :title, :author, :description, :language, :url
+    has_many :book_authors
+    has_many :books, through: :book_authors
+    
 end

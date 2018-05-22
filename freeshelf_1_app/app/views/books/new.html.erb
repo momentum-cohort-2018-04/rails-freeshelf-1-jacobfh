@@ -1,6 +1,6 @@
 <h1>New Book</h1>
 
-<%= form_with scope: :book, url: books_path, local: true do |form| %>
+<%= form_with model: @book, url: books_path, local: true do |form| %>
 
     <% if @book.errors.any? %>
     <div id="error_explanation">
@@ -21,12 +21,14 @@
     <%= form.text_field :title %>
 </p>
 <p>
-    <%= form.label :author %><br>
-    <%= form.text_field :author %>
+<%= form.fields_for :authors, Author.new do |author_field| %>
+    <%= author_field.label :name, 'Author' %><br>
+    <%= author_field.text_field :name %>
+<% end %>
 </p>
 <p>
-    <%= form.label :language %><br>
-    <%= form.text_field :language %>
+    <% form.label :language %><br>
+    <% form.text_field :language %>
 </p>
 <p>
     <%= form.label :url %><br>
@@ -40,5 +42,7 @@
 <p>
 <%= form.submit %>
 </p>
+
+<%= link_to 'Back', books_path %>
 
 <% end %>
