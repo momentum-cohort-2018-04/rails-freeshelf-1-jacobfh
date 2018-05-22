@@ -1,0 +1,544 @@
+Started GET "/" for 127.0.0.1 at 2018-05-21 21:14:47 -0400
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "freeshelf_1_app_development" does not exist
+):
+  
+activerecord (5.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:688:in `rescue in connect'
+activerecord (5.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:683:in `connect'
+activerecord (5.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:215:in `initialize'
+activerecord (5.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.0) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.0) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.0) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/books" for 127.0.0.1 at 2018-05-21 21:14:50 -0400
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "freeshelf_1_app_development" does not exist
+):
+  
+activerecord (5.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:688:in `rescue in connect'
+activerecord (5.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:683:in `connect'
+activerecord (5.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:215:in `initialize'
+activerecord (5.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.0) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.0) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.0) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.0) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.0) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.0) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+  [1m[35m (519.4ms)[0m  [1m[35mCREATE DATABASE "freeshelf_1_app_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (394.9ms)[0m  [1m[35mCREATE DATABASE "freeshelf_1_app_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (11.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (7.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(5045787486572747250)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to CreateBooks (20180521202017)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (8.2ms)[0m  [1m[35mCREATE TABLE "books" ("id" bigserial primary key, "title" character varying, "description" character varying, "url" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180521202017_create_books.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180521202017"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateLanguages (20180521202031)
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (5.1ms)[0m  [1m[35mCREATE TABLE "languages" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180521202031_create_languages.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180521202031"]]
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateAuthors (20180521202052)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (4.7ms)[0m  [1m[35mCREATE TABLE "authors" ("id" bigserial primary key, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20180521202052_create_authors.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20180521202052"]]
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-05-22 01:15:16.704888"], ["updated_at", "2018-05-22 01:15:16.704888"]]
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(5045787486572747250)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/books/new" for 127.0.0.1 at 2018-05-21 21:16:01 -0400
+  
+NameError (undefined local variable or method `books' for #<ActionDispatch::Routing::Mapper:0x00007fe47d2f2ba0>):
+  
+config/routes.rb:5:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/books/index/new" for 127.0.0.1 at 2018-05-21 21:16:25 -0400
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/jacob/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/activerecord-5.2.0/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/books/index/new"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/books/index/new" for 127.0.0.1 at 2018-05-21 21:16:45 -0400
+  
+NameError (undefined local variable or method `books' for #<ActionDispatch::Routing::Mapper:0x00007fe47de9acc8>):
+  
+config/routes.rb:5:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/books/new" for 127.0.0.1 at 2018-05-21 21:16:54 -0400
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (82.4ms)
+Completed 500 Internal Server Error in 90ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `scope' for #<#<Class:0x00007fe4807aa578>:0x00007fe4807a85e8>):
+    1: <h1>New Book</h1>
+    2: <%= form_with scope :book, local: true do |book| %>
+    3: <p>
+    4:     <%= form.label :title %><br>
+    5:     <%= form.text_field :title %>
+  
+app/views/books/new.html.erb:2:in `_app_views_books_new_html_erb___1840925380351553932_70309692398180'
+Started GET "/books/new" for 127.0.0.1 at 2018-05-21 21:18:05 -0400
+  
+NameError (undefined local variable or method `books' for #<ActionDispatch::Routing::Mapper:0x00007fe480348048>):
+  
+config/routes.rb:5:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/books/new" for 127.0.0.1 at 2018-05-21 21:22:14 -0400
+  
+NameError (undefined local variable or method `books' for #<ActionDispatch::Routing::Mapper:0x00007fe47d1de3e0>):
+  
+config/routes.rb:5:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/books/new" for 127.0.0.1 at 2018-05-21 21:22:57 -0400
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/jacob/Momentum/rails-freeshelf-1-jacobfh/freeshelf_1_app/app/views/books/new.html.erb:2: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+...e :book, url: books_path local: true do |book| @output_buffe...
+...                         ^~~~~~
+/Users/jacob/Momentum/rails-freeshelf-1-jacobfh/freeshelf_1_app/app/views/books/new.html.erb:25: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/books/new.html.erb:2: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+app/views/books/new.html.erb:25: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/books/index/new" for 127.0.0.1 at 2018-05-21 21:25:46 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/books/index/new"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/books/new" for 127.0.0.1 at 2018-05-21 21:25:51 -0400
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/jacob/Momentum/rails-freeshelf-1-jacobfh/freeshelf_1_app/app/views/books/new.html.erb:2: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+...e :book, url: books_path local: true do |book| @output_buffe...
+...                         ^~~~~~
+/Users/jacob/Momentum/rails-freeshelf-1-jacobfh/freeshelf_1_app/app/views/books/new.html.erb:25: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/books/new.html.erb:2: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+app/views/books/new.html.erb:25: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/books/new" for 127.0.0.1 at 2018-05-21 21:26:36 -0400
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/jacob/Momentum/rails-freeshelf-1-jacobfh/freeshelf_1_app/app/views/books/new.html.erb:2: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+...: :book, url: books_path local: true do |book| @output_buffe...
+...                         ^~~~~~
+/Users/jacob/Momentum/rails-freeshelf-1-jacobfh/freeshelf_1_app/app/views/books/new.html.erb:25: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+          ^~~~~~):
+  
+app/views/books/new.html.erb:2: syntax error, unexpected tLABEL, expecting keyword_do or '{' or '('
+app/views/books/new.html.erb:25: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/books/new" for 127.0.0.1 at 2018-05-21 21:27:06 -0400
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (30.4ms)
+Completed 200 OK in 394ms (Views: 387.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2018-05-21 21:31:55 -0400
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books/index" for 127.0.0.1 at 2018-05-21 21:32:01 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.4ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:10
+  Rendered books/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 20ms (Views: 14.8ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/books/index" for 127.0.0.1 at 2018-05-21 21:32:40 -0400
+Processing by BooksController#index as HTML
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.3ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:12
+  Rendered books/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 19ms (Views: 16.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/books/index/new" for 127.0.0.1 at 2018-05-21 21:32:51 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/books/index/new"):
+  
+actionpack (5.2.0) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.0) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.0) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.0) lib/rails/engine.rb:524:in `call'
+puma (3.11.4) lib/puma/configuration.rb:225:in `call'
+puma (3.11.4) lib/puma/server.rb:632:in `handle_request'
+puma (3.11.4) lib/puma/server.rb:446:in `process_client'
+puma (3.11.4) lib/puma/server.rb:306:in `block in run'
+puma (3.11.4) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/books//new" for 127.0.0.1 at 2018-05-21 21:32:55 -0400
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 17ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books//new" for 127.0.0.1 at 2018-05-21 21:36:13 -0400
+  
+SyntaxError (/Users/jacob/Momentum/rails-freeshelf-1-jacobfh/freeshelf_1_app/app/controllers/books_controller.rb:33: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/books_controller.rb:33: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/books//new" for 127.0.0.1 at 2018-05-21 21:36:29 -0400
+  
+SyntaxError (/Users/jacob/Momentum/rails-freeshelf-1-jacobfh/freeshelf_1_app/app/controllers/books_controller.rb:32: syntax error, unexpected end-of-input, expecting keyword_end):
+  
+app/controllers/books_controller.rb:32: syntax error, unexpected end-of-input, expecting keyword_end
+Started GET "/books//new" for 127.0.0.1 at 2018-05-21 21:37:02 -0400
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 23ms (Views: 20.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/books//new" for 127.0.0.1 at 2018-05-21 21:38:40 -0400
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for nil:NilClass):
+    2: 
+    3: <%= form_with scope: :book, url: books_path, local: true do |form| %>
+    4: 
+    5:     <% if @book.errors.any? %>
+    6:     <div id="error_explanation">
+    7:       <h2>
+    8:         <%= pluralize(@book.errors.count, "error") %> prohibited
+  
+app/views/books/new.html.erb:5:in `block in _app_views_books_new_html_erb___1840925380351553932_70309692527000'
+app/views/books/new.html.erb:3:in `_app_views_books_new_html_erb___1840925380351553932_70309692527000'
+Started GET "/books//new" for 127.0.0.1 at 2018-05-21 21:39:41 -0400
+Processing by BooksController#new as HTML
+Completed 500 Internal Server Error in 112ms (ActiveRecord: 0.0ms)
+
+
+  
+NameError (undefined local variable or method `book' for #<BooksController:0x00007fe4838c2160>):
+  
+app/controllers/books_controller.rb:8:in `new'
+Started GET "/books//new" for 127.0.0.1 at 2018-05-21 21:39:58 -0400
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 50ms (Views: 34.8ms | ActiveRecord: 4.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-05-21 21:40:02 -0400
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lj+3kH4nOSYmt+qm5ZonVJo6QphP2oUxtzuBtFwWfRXnng8rfkOag4TrbMO0wq7PGTIOQlVLGQvnD3IFVlhDjA==", "book"=>{"title"=>"", "author"=>"", "language"=>"", "url"=>"", "description"=>""}, "commit"=>"Save Book"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'author' for Book.):
+  
+app/controllers/books_controller.rb:12:in `create'
+Started PUT "/__web_console/repl_sessions/b05218fbe023cbcfe8d9d2169438e3f0" for 127.0.0.1 at 2018-05-21 21:40:43 -0400
+Started PUT "/__web_console/repl_sessions/b05218fbe023cbcfe8d9d2169438e3f0" for 127.0.0.1 at 2018-05-21 21:40:43 -0400
+Started PUT "/__web_console/repl_sessions/b05218fbe023cbcfe8d9d2169438e3f0" for 127.0.0.1 at 2018-05-21 21:40:49 -0400
+Started PUT "/__web_console/repl_sessions/b05218fbe023cbcfe8d9d2169438e3f0" for 127.0.0.1 at 2018-05-21 21:40:49 -0400
+Started PUT "/__web_console/repl_sessions/b05218fbe023cbcfe8d9d2169438e3f0" for 127.0.0.1 at 2018-05-21 21:40:54 -0400
+Started PUT "/__web_console/repl_sessions/b05218fbe023cbcfe8d9d2169438e3f0" for 127.0.0.1 at 2018-05-21 21:40:55 -0400
+Started PUT "/__web_console/repl_sessions/b05218fbe023cbcfe8d9d2169438e3f0" for 127.0.0.1 at 2018-05-21 21:40:55 -0400
+Started POST "/books" for 127.0.0.1 at 2018-05-21 21:41:43 -0400
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lj+3kH4nOSYmt+qm5ZonVJo6QphP2oUxtzuBtFwWfRXnng8rfkOag4TrbMO0wq7PGTIOQlVLGQvnD3IFVlhDjA==", "book"=>{"title"=>"", "author"=>"", "language"=>"", "url"=>"", "description"=>""}, "commit"=>"Save Book"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'author' for Book.):
+  
+app/controllers/books_controller.rb:12:in `create'
+Started POST "/books" for 127.0.0.1 at 2018-05-21 21:42:08 -0400
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lj+3kH4nOSYmt+qm5ZonVJo6QphP2oUxtzuBtFwWfRXnng8rfkOag4TrbMO0wq7PGTIOQlVLGQvnD3IFVlhDjA==", "book"=>{"title"=>"", "author"=>"", "language"=>"", "url"=>"", "description"=>""}, "commit"=>"Save Book"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'author' for Book.):
+  
+app/controllers/books_controller.rb:12:in `create'
+Started POST "/books" for 127.0.0.1 at 2018-05-21 21:44:51 -0400
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lj+3kH4nOSYmt+qm5ZonVJo6QphP2oUxtzuBtFwWfRXnng8rfkOag4TrbMO0wq7PGTIOQlVLGQvnD3IFVlhDjA==", "book"=>{"title"=>"", "author"=>"", "language"=>"", "url"=>"", "description"=>""}, "commit"=>"Save Book"}
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 2.6ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'author' for Book.):
+  
+app/controllers/books_controller.rb:12:in `create'
+Started GET "/books/new" for 127.0.0.1 at 2018-05-21 21:45:06 -0400
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/Users/jacob/Momentum/rails-freeshelf-1-jacobfh/freeshelf_1_app/app/views/books/new.html.erb:3: syntax error, unexpected ':', expecting keyword_end
+...pend=  form_with scope: :book :author :language, url: books_...
+...                              ^):
+  
+app/views/books/new.html.erb:3: syntax error, unexpected ':', expecting keyword_end
+Started GET "/books/new" for 127.0.0.1 at 2018-05-21 21:45:29 -0400
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (22.1ms)
+Completed 200 OK in 43ms (Views: 40.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-05-21 21:45:33 -0400
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VNpdGP9VfqMAWyfhGPubhNt+TgOjDN1dg/nHYQGjPQEle+Wj/zHdBqIHoYRJoxIfWHYC2bmdQWfTzTTQC+0DmA==", "book"=>{"title"=>"", "author"=>"", "language"=>"", "url"=>"", "description"=>""}, "commit"=>"Save Book"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'author' for Book.):
+  
+app/controllers/books_controller.rb:12:in `create'
+Started POST "/books" for 127.0.0.1 at 2018-05-21 21:47:33 -0400
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VNpdGP9VfqMAWyfhGPubhNt+TgOjDN1dg/nHYQGjPQEle+Wj/zHdBqIHoYRJoxIfWHYC2bmdQWfTzTTQC+0DmA==", "book"=>{"title"=>"", "author"=>"", "language"=>"", "url"=>"", "description"=>""}, "commit"=>"Save Book"}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 2.2ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'author' for Book.):
+  
+app/controllers/books_controller.rb:12:in `create'
+Started GET "/books/new" for 127.0.0.1 at 2018-05-22 07:26:53 -0400
+Processing by BooksController#new as HTML
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/new.html.erb within layouts/application (15.1ms)
+Completed 200 OK in 84ms (Views: 55.1ms | ActiveRecord: 5.9ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2018-05-22 07:26:56 -0400
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FXTNhxOAnJ8wl8KVXf+BQlKqsUiFZmfcJWzfXe0adYpk1XU8E+Q/OpLLRPAMpwjZ0aL9kp/3++Z1WCzs51RLEw==", "book"=>{"title"=>"", "author"=>"", "language"=>"", "url"=>"", "description"=>""}, "commit"=>"Save Book"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Language(#70309719926580) expected, got "" which is an instance of String(#70309667831300)):
+  
+app/controllers/books_controller.rb:12:in `create'
+Started POST "/books" for 127.0.0.1 at 2018-05-22 07:27:56 -0400
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FXTNhxOAnJ8wl8KVXf+BQlKqsUiFZmfcJWzfXe0adYpk1XU8E+Q/OpLLRPAMpwjZ0aL9kp/3++Z1WCzs51RLEw==", "book"=>{"title"=>"", "author"=>"", "language"=>"", "url"=>"", "description"=>""}, "commit"=>"Save Book"}
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 2.3ms)
+
+
+  
+ActiveRecord::AssociationTypeMismatch (Language(#70309721109100) expected, got "" which is an instance of String(#70309667831300)):
+  
+app/controllers/books_controller.rb:12:in `create'
