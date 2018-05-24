@@ -1,3 +1,8 @@
+<head><link rel="stylesheet" href="https://cdn.shoelace.style/1.0.0-beta24/shoelace.css"></head>
+<div class="container">
+<div class="row">
+<div class="col-sm">
+<h1>Book Details</h1>
 
 <p>
 <strong>Title:</strong>
@@ -6,22 +11,24 @@
 
 <p>
 <strong>Author:</strong>
-<%= @book.author %>
-</p>
-
-<p>
-<strong>Language:</strong>
-<%= @book.language %>
+<%= @book.authors.pluck(:name).join(', ') %>
 </p>
 
 <p>
 <strong>Url:</strong>
 <%= @book.url %>
 </p>
-
+</div>
+<div class="col-sm">
 <p>
 <strong>Description:</strong>
 <%= @book.description %>
 </p>
+</div>
+</div>
 
+<%= link_to 'Add to checkout list', checkout_path %>
 <%= link_to 'Back', books_path %>
+
+
+

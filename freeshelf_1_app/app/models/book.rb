@@ -1,12 +1,12 @@
 class Book < ApplicationRecord
-    attr_accessor :title, :author, :description, :language, :url
-
-    validates :title, presence:true,
-    length: { minimum: 1 }
+    validates :title, presence: true
 
     validates :url, presence:true
     
-    validates :description, presence:true
+    validates :description, presence:true,
+    length: {minimum: 5, maximum: 250},
+    on: :create,
+    allow_nil: false
 
     has_many :book_authors
     has_many :authors, through: :book_authors

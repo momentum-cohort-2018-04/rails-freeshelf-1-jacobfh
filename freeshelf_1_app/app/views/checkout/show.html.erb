@@ -1,0 +1,31 @@
+<head><link rel="stylesheet" href="https://cdn.shoelace.style/1.0.0-beta24/shoelace.css"></head>
+<div class="container">
+<div class="row">
+<div class="col-sm">
+<h1>Add <em><%= @book.title %></em> to your checkout list</h1>
+<button type="button" class="button-block">Confirm</button>
+<p>
+<strong>Title:</strong>
+<%= @book.title %>
+</p>
+
+<p>
+<strong>Author:</strong>
+<%= @book.authors.pluck(:name).join(', ') %>
+</p>
+
+<p>
+<strong>Url:</strong>
+<%= @book.url %>
+</p>
+</div>
+<div class="col-sm">
+<p>
+<strong>Description:</strong>
+<%= @book.description %>
+</p>
+</div>
+</div>
+
+<%= link_to 'Back', books_path %>
+

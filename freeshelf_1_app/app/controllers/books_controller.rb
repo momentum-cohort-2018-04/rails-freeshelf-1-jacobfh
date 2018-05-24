@@ -10,14 +10,16 @@ class BooksController < ApplicationController
 
   def create
     @book = Book.new(book_params)
- 
     if @book.save
-      redirect_to @book
+      redirect_to books_url,  notice: "Your book was created successfully."
     else
       render 'new'
     end
   end
 
+  def edit
+    @book = Book.find(params[:id])
+  end
 
   def destroy
     @book = Book.find(params[:id])
@@ -46,12 +48,6 @@ class BooksController < ApplicationController
 
   private
   def book_params
-    params.require(:book).permit(
-      :title, 
-      :language, 
-      :url, 
-      :description,
-      authors_attributes: [:name]
-    )
+    params.require(:book).permit(:title, :url, :description, :author_ids)
   end
 end
