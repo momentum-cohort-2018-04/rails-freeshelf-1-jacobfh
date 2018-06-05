@@ -1,0 +1,35 @@
+<head><link rel="stylesheet" href="https://cdn.shoelace.style/1.0.0-beta24/shoelace.css"></head>
+
+<h1>Freeshelf</h1>
+<h3>Software development resources</h3>
+
+<table class="table">
+  <tr>
+    <th>Title</th>
+    <th>Author</th>
+    <th>Url</th>
+    <th>Description</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+ 
+  <% @books.each do |book| %>
+    <tr>
+      <td><%= book.title %></td>
+      <td><%= book.author_ids.pluck(:name).join(', ') %></td>
+      <td><%= book.url %></td>
+      <td><%= book.description %></td>
+      <td><%= link_to 'View/Add', book_path(book) %></td>
+      <td><%= link_to 'Edit', edit_book_path(book) %></td>
+      <td><%= link_to 'Remove', book_path(book),
+        method: :delete,
+        data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+
+  <% end %>
+  <%= link_to 'New book', new_book_path %>
+  <%= link_to 'Checkout list', checkout_index_path %>
+</table>
+
+

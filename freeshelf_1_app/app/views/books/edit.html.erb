@@ -1,0 +1,32 @@
+<head><link rel="stylesheet" href="https://cdn.shoelace.style/1.0.0-beta24/shoelace.css"></head>
+
+<h1>Edit Book</h1>
+
+<%= form_with model: @book, url: books_path, local: true do |form| %>
+
+<p>
+    <%= form.label :title %><br>
+    <%= form.text_field :title %>
+</p>
+<p>
+<%= form.fields_for :author_ids, Author.new do |author_field| %>
+    <%= author_field.label :name, 'Author' %><br>
+    <%= author_field.text_field :name %>
+<% end %>
+</p>
+<p>
+    <%= form.label :url %><br>
+    <%= form.text_field :url %>
+</p>
+<p>
+    <%= form.label :description %><br>
+    <%= form.text_area :description %>
+</p>
+
+<p>
+<%= form.submit %>
+</p>
+
+<%= link_to 'Back', books_path %>
+
+<% end %>
